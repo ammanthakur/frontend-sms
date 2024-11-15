@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("C:\Users\Amant\Desktop\frontend pro\newyork.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.login-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+.input-group{
+    position: relative;
+    margin-bottom: 30px;
+}
+.links{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(208, 50, 50);
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: rgb(89, 78, 21);
+    position: center;
+    cursor: pointer;
+    
+}
+.links:hover{
+    border: 1px solid red;
+    background: red;
+    transition: 1s;
+}
+h1{
+    color: rgb(37, 30, 30);
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background-color: whitesmoke;
+}
+h2{
+    color: rgb(37, 30, 30);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+a{
+    
+    color: #fff;
+    text-decoration: none;
+}
+.login{
+    
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: center;
+    cursor: pointer;
+    text-align: center;
+}
+.login:hover{
+    border: 1px solid red;
+    background: rgb(255, 0, 0);
+    transition: 1s;
+}
+.hi{
+    text-align: center;}
+.forgot-reg{
+    text-align: center;
+}
+
+.entry{
+    text-align: center;
+    
+}
