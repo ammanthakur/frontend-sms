@@ -72,17 +72,35 @@
             </table>
         </div>
 
-        <div id="addTeacherSection" class="form-section" style="display: none;">
-            <h2>Add Teacher</h2>
-            <form id="addTeacherForm">
-                <label for="teacherName">Name:</label>
-                <input type="text" id="teacherName" name="teacherName">
+        <div id="addTeacherSection" class="form-section" style="display: none; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <form id="addTeacherForm" style="display: flex; flex-direction: column; gap: 15px;">
+                <label for="teacherFirstName">First Name:</label>
+                <input type="text" id="teacherFirstName" name="teacherFirstName" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherLastName">Last Name:</label>
+                <input type="text" id="teacherLastName" name="teacherLastName" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherId">Teacher ID:</label>
+                <input type="text" id="teacherId" name="teacherId" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherEmailId">Email ID:</label>
+                <input type="email" id="teacherEmailId" name="teacherEmailId" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherPhoneNumber">Phone Number:</label>
+                <input type="tel" id="teacherPhoneNumber" name="teacherPhoneNumber" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
                 <label for="teacherSubject">Subject:</label>
-                <input type="text" id="teacherSubject" name="teacherSubject">
-                <button type="submit">Add Teacher</button>
+                <input type="text" id="teacherSubject" name="teacherSubject" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherUserName">User Name:</label>
+                <input type="text" id="teacherUserName" name="teacherUserName" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <label for="teacherPassword">Password:</label>
+                <input type="password" id="teacherPassword" name="teacherPassword" style="padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                
+                <button type="submit" style="padding: 10px; border-radius: 5px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">Add Teacher</button>
             </form>
         </div>
-
         <div id="teacherRecordsSection" class="records-section" style="display: none;">
             <h2>Teacher Records</h2>
             <table id="teacherRecords">
