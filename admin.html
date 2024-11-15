@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - MIT</title>
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <header>
+        <h1><a href="#" onclick="showSection('welcomeSection')" style="color: white; text-decoration: none;">Admin DashBoard</a></h1>
+    </header>
+    <aside>
+        <button onclick="showSection('addStudentSection')">Add Student</button>
+        <button onclick="showSection('studentRecordsSection')">See Student Records</button>
+        <button onclick="showSection('addTeacherSection')">Add Teacher</button>
+        <button onclick="showSection('teacherRecordsSection')">See Teacher Records</button>
+    </aside>
+    <main>
+        <div id="addStudentSection" class="form-section" style="display: none;">
+            <h2>Add Student</h2>
+            <form id="addStudentForm">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName">
+                <label for="studentAge">Age:</label>
+                <input type="number" id="studentAge" name="studentAge">
+                <button type="submit">Add Student</button>
+            </form>
+        </div>
+
+        <div id="studentRecordsSection" class="records-section" style="display: none;">
+            <h2>Student Records</h2>
+            <table id="studentRecords">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student records will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="addTeacherSection" class="form-section" style="display: none;">
+            <h2>Add Teacher</h2>
+            <form id="addTeacherForm">
+                <label for="teacherName">Name:</label>
+                <input type="text" id="teacherName" name="teacherName">
+                <label for="teacherSubject">Subject:</label>
+                <input type="text" id="teacherSubject" name="teacherSubject">
+                <button type="submit">Add Teacher</button>
+            </form>
+        </div>
+
+        <div id="teacherRecordsSection" class="records-section" style="display: none;">
+            <h2>Teacher Records</h2>
+            <table id="teacherRecords">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Subject</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Teacher records will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div id="welcomeSection" class="welcome">
+            <h2>Welcome to MIT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non praesentium perferendis quasi eum debitis minus, minima, omnis doloremque quaerat sequi voluptatum sit voluptatibus nesciunt, nostrum quia corrupti aliquid natus sed eligendi vero nisi. Quam soluta perferendis culpa quae explicabo suscipit iure, repellat aperiam pariatur tenetur quia est omnis optio repellendus!</p>
+        </div>
+    </main>
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('main > div').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
