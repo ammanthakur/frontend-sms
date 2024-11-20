@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - MIT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 1rem;
+        }
+        .post {
+            flex: 1 1 calc(33.333% - 2rem);
+            margin: 1rem;
+            background-color: #f4f4f4;
+            padding: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .post img {
+            max-width: 100%;
+            height: auto;
+        }
+        .post h2 {
+            margin-top: 0;
+        }
+        .aman{
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           color: #555;
+           font-size: 50px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .post {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+        @media (max-width: 480px) {
+            .post {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moradabad Institute of Technology</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+    </nav>
+    <div class="aman"><h1 class="">Blogs</h1></div>
+    <div class="container">
+        <div class="post">
+            <img src="https://via.placeholder.com/300" alt="Post Image">
+            <h2>Blog Post Title 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor.</p>
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/300" alt="Post Image">
+            <h2>Blog Post Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor.</p>
+        </div>
+        <div class="post">
+            <img src="https://via.placeholder.com/300" alt="Post Image">
+            <h2>Blog Post Title 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor.</p>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+</body>
+</html>
