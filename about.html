@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Moradabad Institute of Technology</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Images/pic1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            background-color: rgba(66, 66, 66, 0.8);
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .content {
+            flex: 1 1 60%;
+            max-width: 60%;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .content a {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            background-color: #ffcc00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .content a:hover {
+            background-color: #e6b800;
+        }
+
+        .image {
+            flex: 1 1 35%;
+            flex-shrink: 0;
+            text-align: center;
+        }
+
+        .image img {
+            border-radius: 10px;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .content, .image {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h1>About Moradabad Institute of Technology</h1>
+            <p>Moradabad Institute of Technology, established in 1996, is attaining heights on the glorious ladder of academic excellence. MIT started with 160 students in three B. Tech branches, namely Computer Engineering & Information Technology, Electronics & Communication Engineering, and Mechanical Engineering. At present, the institute offers five B. Tech programs, namely Computer Science & Engineering, Civil Engineering, Electronics & Communication Engineering, and Electrical Engineering & Mechanical Engineering.</p>
+            <p>MIT, along with other colleges, is nourished by a group of dedicated, hardworking, and qualified faculty and staff. Although the institutes of higher learning in the technical field grew enormously during the past decade, efforts were made to keep the quality of MIT Group of Institutions high, without any compromise.</p>
+            <a href="index.html">EXPLORE MIT &gt;</a>
+        </div>
+        <div class="image">
+            <img src="Images/pic1.jpg" alt="Moradabad Institute of Technology Campus">
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Moradabad Institute of Technology. All rights reserved.
+    </div>
+</body>
+</html>
